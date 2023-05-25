@@ -2,10 +2,12 @@
 
 # Implementing OLTP, OLAP systems on United States H-1B visa data for operational usage and analytics
 
+![Uploading Screenshot 2023-05-24 at 8.53.00 PM.png…]()
+
 # Introduction
 Online Transactional Processing (OLTP) systems which are operational data stores (ODS), will help in processing the data in real time. Online Analytical Processing (OLAP) systems are informational and used for analysis. Implementing these systems on H-1B visa data will help in accessing data from ODS by the users and performing analysis on DWH. H-1B visa is a nonimmigrant work visa that allows U.S. employers to hire foreign workers for specialty jobs that require a bachelor's degree or equivalent. Highly educated foreign professionals apply for USA H-1B visas. With the data, we perform analysis and create dashboards that will help us understand various educational and geographical factors of an applicant. An Entity Relationship (ER) model is created by collecting the required data points from U.S. Citizenship and Immigration Services (USCIS). We have used the ER diagram to develop the OLTP database in the cloud MySQL instance. Data in MySQL is extracted and transformed using python and is loaded to a data warehouse. Analytics is performed on top of the data warehouse with data represented using a dashboard.
 
-https://miro.medium.com/v2/resize:fit:1400/format:webp/1*LbcL8sctBwly2IBYLpOorA.png
+
 
 # Goals and Motivations
 The goal and motivation are to present the analysis for the following
