@@ -10,9 +10,9 @@ Online Transactional Processing (OLTP) systems which are operational data stores
 
 
 # Goals and Motivations
-The goal and motivation are to present the analysis for the following
-Top 10 applicant countries.
-Popular education background from all the applicants.
+1. The goal and motivation are to present the analysis for the following.
+2. Top 10 applicant countries.
+3. Popular education background from all the applicants.
 Major employers with the highest applications and decisions.
 State-wise distributions of application for the United States.
 The average wage for the applicants across job titles.
