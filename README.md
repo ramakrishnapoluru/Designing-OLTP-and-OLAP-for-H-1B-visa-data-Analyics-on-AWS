@@ -2,7 +2,7 @@
 
 # Implementing OLTP, OLAP systems on United States H-1B visa data for operational usage and analytics
 
-![Uploading Screenshot 2023-05-24 at 8.53.00 PM.png…]()
+
 
 # Introduction
 Online Transactional Processing (OLTP) systems which are operational data stores (ODS), will help in processing the data in real time. Online Analytical Processing (OLAP) systems are informational and used for analysis. Implementing these systems on H-1B visa data will help in accessing data from ODS by the users and performing analysis on DWH. H-1B visa is a nonimmigrant work visa that allows U.S. employers to hire foreign workers for specialty jobs that require a bachelor's degree or equivalent. Highly educated foreign professionals apply for USA H-1B visas. With the data, we perform analysis and create dashboards that will help us understand various educational and geographical factors of an applicant. An Entity Relationship (ER) model is created by collecting the required data points from U.S. Citizenship and Immigration Services (USCIS). We have used the ER diagram to develop the OLTP database in the cloud MySQL instance. Data in MySQL is extracted and transformed using python and is loaded to a data warehouse. Analytics is performed on top of the data warehouse with data represented using a dashboard.
@@ -25,6 +25,8 @@ The average wage of the state across roles.
 # Overview and Architecture
 The goal is to implement OLTP and OLAP systems on the cloud, with the entire process automated in a single data pipeline/ workflow. After exploring services offered by various cloud service providers, we have decided to develop the project on Amazon Web Services (AWS), a top CSP famous for its pricing methodology and various flexible services. We have extracted the data from USCIS in CSV format. Data available from USCIS is raw data that has 154 columns and is unnormalized.
 Post normalization of the data, CSV's will be migrated to the Amazon Simple Storage Service (S3) (located - US East (N. Virginia) us-east-1), which is scalable infrastructure storage and provides object storage services through a web service interface. Then we have our cloud SQL MySQL instance - OLTP (located - us-east-1b), Identity and Access Management (IAM) roles created along with the users and groups to access the Relational Database service. The instance is configured with VPC that will monitor and filter an instance's incoming and outgoing traffic with only authorized users accessing it. The backup policy of MySQL instance will help us in unexpected circumstances. ETL scripts are developed in python and orchestrated using AWS glue job, a serverless data integration service built on Apache Spark Structured Streaming engine. Using the ETL process, data is extracted from the MySQL instance and is transformed, and loaded into the data warehouse (DWH) entire ETL setup is performed using python. With the data in the warehouse, analysis is performed and views are created for the data reporting using SQL. Views are used to report the analysis in the form of visuals.
+
+![Archirechture!](https://github.com/ramakrishnapoluru/USAH1BAnalysis/assets/119472036/2dd68000-373e-45ae-b63c-7bc56d51be8a)
 
 # Project Flow
 
