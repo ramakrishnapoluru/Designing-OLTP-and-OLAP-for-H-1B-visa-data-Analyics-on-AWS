@@ -13,14 +13,14 @@ Online Transactional Processing (OLTP) systems which are operational data stores
 1. The goal and motivation are to present the analysis for the following.
 2. Top 10 applicant countries.
 3. Popular education background from all the applicants.
-Major employers with the highest applications and decisions.
-State-wise distributions of application for the United States.
-The average wage for the applicants across job titles.
-Distribution of foreign workers across the economic sector.
-Distribution of applications across prevailing wage.
-Total applications for the Fiscal year.
-Distribution of wages across the educational qualifications.
-The average wage of the state across roles.
+4. Major employers with the highest applications and decisions.
+5. State-wise distributions of application for the United States.
+6. The average wage for the applicants across job titles.
+7. Distribution of foreign workers across the economic sector.
+8. Distribution of applications across prevailing wage.
+9. Total applications for the Fiscal year.
+10. Distribution of wages across the educational qualifications.
+11. The average wage of the state across roles.
 
 # Overview and Architecture
 The goal is to implement OLTP and OLAP systems on the cloud, with the entire process automated in a single data pipeline/ workflow. After exploring services offered by various cloud service providers, we have decided to develop the project on Amazon Web Services (AWS), a top CSP famous for its pricing methodology and various flexible services. We have extracted the data from USCIS in CSV format. Data available from USCIS is raw data that has 154 columns and is unnormalized.
